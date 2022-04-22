@@ -1,0 +1,555 @@
+Board name, Long
+Enter the name of your bulletin board
+lstr
+Board name, Short
+Enter a shortened form of the above
+lstr
+Sysop name
+Enter your name here.
+lstr
+Sysop auto-login
+If yes, signing on local will automatically log in under the sysop's name
+Boo
+Path to L.S.D. BBS
+The Main path to L.S.D. BBS
+path
+Path to message base
+The message base files are held in this sub-directory.  Make sure it exists!
+path
+Path to board files
+Databases and sub-board files will use this path.
+path
+Path to ASCII uploads
+All ASCII uploads (to sub-boards) will be created in this sub-directory.
+path
+Path to text files
+This directory includes the menus, raise request, info-form, help, etc.
+path
+Path to door files
+Batch files for doors go in this directory by default.
+path
+Path to overlay file (N)
+The overlay files will be copied here.  Enter a path, or N for none.
+path
+Path to Net Directory
+The Path used for the BBS Net mail work
+path
+Path to Bi-Modem
+The Path to your Bimodem Directory
+path
+"Work Directory"
+The path for various work functions (such as netmailing)
+path
+Supported BAUD rates
+Baud Rates that are supported for logging onto your BBS.
+baud
+Download BAUD rates
+Baud rates that a user can download with
+baud
+Default BAUD rate
+Enter the start-up baud rate (for modem setup).
+word
+COM# port
+Enter the COM: port to which your modem is connected.  Standard value is 1.
+Int 1-2
+Hayes or compatible
+Enter Y if you have a Hayes SmartModem or a compatible.
+boo
+Modem setup text
+Text sent to the modem between callers.  |=CR, ~=pause, ^x=control-char
+lstr
+Modem hangup text
+Text sent to the modem to make it hang up.  |=CR, ~=pause, ^x=control-char
+lstr
+Dial prefix
+Text sent to the modem before a phone number.  |=CR, ~=pause, ^x=control-char
+lstr
+Dial suffix
+Text sent to the modem after a phone number.  |=CR, ~=pause, ^x=control-char
+lstr
+CO-SYSOP level
+Choose the security level for co-sysop.
+Int 1-32767
+# of welcome files
+Enter the number of welcome files you have.  Files named WELCOME.1, WELCOME.2
+Int 1-999
+Is the system private
+Enter Y or N.  If Yes, new users will not be allowed.
+boo
+Direct video addressing
+If Yes, screen output will be faster, but it may interfere with multitasking
+boo
+Snow filtering
+If you are experiencing video snow, set this option to No.
+boo
+Output to DOS CON:
+If Yes, then ANSI.SYS will work, but the colors may not.  Usually No.
+boo
+Escape in messages
+If Yes, users may place "escape codes" (ANSI control) in messages. Usually No.
+boo
+Backspacing in msgs
+If Yes, users may press ^Q in their messages to produce an overprint effect.
+boo
+Normal color
+Enter the standard text color attribute.  Commonly 2 (green) or 7 (white)
+Attrib
+Top split color
+Enter the attribute for the top screen half.  Commonly 2 (green) or 7 (white)
+Attrib
+Output-lock color
+Attribute to use when in snoop mode.  Commonly 5 (purple) or 7 (white)
+Attrib
+Split-line color
+Attribute to use for the line between the halves.  Commonly 7 (white)
+Attrib
+Status line color
+Attribute to use for the bottom line.  It will be in inverse mode.  7=white
+Attrib
+User time per day
+(Use this to configure Daily Time Limits)
+Usertime
+Input time out
+Number of minutes of silence from remote user until the system hangs up.
+Int 2-60
+Hidden-input character
+Character to echo when user is entering his password.  Commonly ".".
+char
+End of download text
+Text to send at the end of an ASCII download.  Commonly holds this BBS's name.
+lstr
+Newuser file xfer lvl
+File transfer level for new users
+Int 0-32767
+Newuser file xfer pts
+File transfer points for new users, 0 if downloads are free on your system
+Int 0-32767
+Newuser G-File Level
+The G-File level given to new users
+int 0-32767
+Newuser G-File Points
+The g-file points given to new users
+int 0-32767
+2nd call access level
+Access level to be automatically assigned on all users' second calls
+Int 0-32767
+2nd call xfer level
+File transfer level to be assigned on all users' second calls
+Int 0-32767
+2nd call xfer points
+File transfer points to be assigned on all users' second calls
+Int 0-32767
+Upload factor
+When you rate a file, the uploader will get (this number * your rating) points
+Int
+Upload time back
+The time back (+100%) that a user gets for uploads
+int 0-100
+Time sysop's available
+Enter time sysop becomes available for chat.  Form: 8:30 am, 10:00 pm, etc.
+Time
+Time sysop isn't
+Enter time sysop becomes unavailable for chat.  Form: 11:30 pm, 1:45 am, etc.
+Time
+Time file xfer opens
+Enter time the file transfer section opens.  Form: 9:28 am, 12:15 pm, etc.
+Time
+Time file xfer closes
+Enter time the file transfer section closes.  Form: 7:36 pm, 11:32 am, etc.
+Time
+Time Private Hours Start
+Enter the time the private hours start.
+time
+Time Private Hours Stop
+Enter the time the private hours stop
+time
+Level for private hours
+The Level needed to access the BBS during Private Hours
+int 0-32767
+Anonymous string
+The other users will see this replacing the name of an anonymous poster.
+mstr
+Mandatory Infoform #1
+If yes, then all users without info-forms #1 will be required to enter them.
+boo
+Mandatory Infoform #2
+If yes, then all users without infoform #2 will be required to enter it
+boo
+Mandatory Infoform #3
+If yes, then all users without infoform #3 will be required to enter it
+boo
+Mandatory Infoform #4
+If yes, then all users without infoform #4 will be required to enter it
+boo
+Mandatory Infoform #5
+If yes, then all users without infoform #5 will be required to enter it
+boo
+Remote door maintenance
+If yes, remote co-sysops will be able to create potentially dangerous doors.
+boo
+Allow doors at all
+If yes, doors will be allowed. If not, all doors will be locked. For security.
+boo
+Use Demons
+If yes, then the BBS will be "Attacked" by demons
+boo
+Allow Time Bank
+If yes, then the time bank will be used
+boo
+Allow Rumours
+If yes, then rumours will be used
+Boo
+Use "One Liners"
+If yes, then "One-Liners" will be used
+Boo
+Use "Zip Comments"
+If yes, then the BBS will add a .ZIP Comment to your files
+Boo
+Use Normal menus
+If yes, then Sysop Defined menus will be made
+boo
+Have Logon Whissle
+If yes, then a "Logon Whissle" will be sounded whenever a user logs on
+boo
+Time to run batch job
+Enter the time FORUM is to drop into DOS.  Enter N for none.
+time
+Batch file to run
+Enter the name of the batch file FORUM will run at the specified time.
+sstr
+Matrix type
+The type of Matrix your BBS will use (0=None, 1=Standard, 2=Dos, 3=Custom)
+int 0-3
+System/1 Password
+The Password used for the mian BBS
+mstr
+System/2 Password
+The Password for the System/2 [N] for None
+mstr
+System/3 Password
+The Password for the System/3 [N] for None
+mstr
+New User Password
+The Password for a new user, [N] for None
+mstr
+SysOp Password
+The Password used to enter sysop commands
+mstr
+Emergency Chat Password
+The Password used to call the sysop into chat (emergency)
+mstr
+The Login Header
+The header placed after the status box
+mstr
+Post/Call Ratio
+The Minimum posts per calls the users has to maintain (usually 25%)
+int 0-100
+Upload/Download Ratio
+The Minimum Upload per Download Ratio
+int 0-100
+Upload/Download K Ratio
+The Minimum Upload/Download K-Byte Ratio
+int 0-100
+Exempt Level
+The level which a user is exempt from the PCR, U/D, and U/D K (usually 50)
+int 0-32767
+Default Level
+The Level which a user is given via the [+] command.
+int 0-32767
+Default File Level
+The file level which a user is given via the [+] command.
+int 0-32767
+Default File Points
+The default file points a user is given via the [+] command.
+int 0-32767
+Default G-File Level
+The Default G-File level a user is given via the [+] command.
+int 0-32767
+Default G-File Points
+The Default G-File points a user is given via the [+] command.
+int 0-32767
+Default Account Note
+The Default Account note a user is given via the [+] command.
+mstr
+Text Editor
+The Pathname and filespec for your text editor.
+mstr
+Chat Mode Start String
+The String that is displayed when the SysOp enters Chat
+mstr
+Chat Mode Exit String
+The String that is displayed when the SysOp exits chat.
+mstr
+Leech Week
+If yes then all files will be validated files will be free
+boo
+Matrix Chat
+If yes then the user online will be able to page you from the matrix
+boo
+Matrix Feedback
+If yes then the user will be able to leave feedback from the matrix
+boo
+Sysop is here string
+String displayed if you are available when the user logs on.
+mstr
+Sysop is out string
+String displayed if you are not available when the user logs on.
+mstr
+Anonymous Level
+The Level to post an Anonymous Message
+int 0-32767
+ Bulletin Post Level
+The Level needed to post a message
+int 0-32767
+ List Level
+The level needed to list the users
+int 0-32767
+ Last level
+The level needed to view the last users
+int 0-32767
+ Matrix Command 1
+The Command for matrix command #1
+mstr
+ Matrix Command 2
+The Command for Matrix Command #2
+Mstr
+ Matrix Command 3
+The Command for matrix command #3
+Mstr
+ Matrix Command 4
+The Command for matrix command #4
+Mstr
+ Matrix Command 5
+The Command for matrix command #5
+mstr
+ Matrix Command 6
+The Command for matrix command #6
+mstr
+ Matrix Command 7
+The Command for matrix command #7
+mstr
+ Matrix Command 8
+The Command for matrix command #8
+mstr
+ Matrix Prompt
+The Prompt displayed at the matrix
+mstr
+ Logon System 1 prompt
+Prompt for when displaying help (i.e. System 1)
+mstr
+ Logon System 2 prompt
+Prompt for when displaying help (i.e. System2)
+mstr
+ Logon System 3 prompt
+Prompt for when displaying help (i.e. System3)
+mstr
+ Apply For Access Prompt
+Prompt used for when applying for access
+mstr
+ Check for Access prompt
+Prompt used when checking for access
+mstr
+ Log off prompt
+Prompt used for logging off the matrix
+mstr
+ Feedback from Matrix
+Prompt used to leave feedback from matrix
+mstr
+ Chat from Matrix
+Prompt used for chat from the matrix
+mstr
+ Level to leave msg
+Level to leave a Message to next user
+Int 0-32767
+ Demon Name
+The name of the demon which "Attacks" users.
+Mstr
+ Leech List UD Min.
+The ratio which puts you on the "Leech List"
+int 0-100
+ Leech List K Ratio
+The ratio which puts you on the "Leech List" for K x-ferred
+int 0-100
+ Answer to question 1
+The Answer to the question of the Best IBM Crack group
+mstr
+ Maximum Time in Bank
+The Maximum number of minutes a user can have in the bank at one time.
+int 0-6000
+ Level to use Time Bank
+The minimum level required to use the Time Bank function
+int 0-32767
+ Level to Add Rumour
+The Access Level needed to add a rumour.
+int 0-32767
+ Minimum Free Space
+The Minimum free space you need before a user can upload
+int 0-32767
+ Number of Infoforms
+The number of infoforms in use by your BBS
+int 1-5
+ Infoform 1
+A description of Infoform #1
+lstr
+ Infoform 2
+A description of Infoform #2
+lstr
+ Infoform 3
+A description of Infoform #3
+lstr
+ Infoform 4
+A Description of Infoform #4
+lstr
+ Infoform 5
+A description of Infoform #5
+lstr
+ Net Receive Hours Start
+The time your BBS will start accepting netmail
+time
+ Net Receive Hours End
+The time your BBS will stop accepting netmail
+time
+ Use "Famous Events"
+Uses the Famous Birthdays and Famous Events on this day at logon
+boo
+ Net Start Sending
+The Time your BBS starts to send netmail (leave blank if no netmail)
+time
+ Net End Send
+The Time your BBS STOPS trying to send netmail (if not completed)
+time
+ Net Password
+The Password used for NetMail
+mstr
+ Extender Prefix
+Prefix for extender in use (include access code if not ITT), Include ','s
+mstr
+ Extender Suffix
+Leave Blank if you dial your access code BEFORE the phone number
+mstr
+ DSZ Log Setting
+This is the setting for your DSZ log.
+lstr
+ Transfer Log Size
+This is the size of the "Transfer Log" in K (named BBSDir+TRANS.LOG)
+int 1-200
+ Default Status Color
+This is the Default NewUser Status Color
+attrib
+ Default Input Color
+This is the Default Input Color for newusers
+attrib
+ Default Prompt Color
+This is the default prompt color for new users
+attrib
+ Default Regular Color
+This is the default regular color for new users
+attrib
+ Default Box Inside
+This is the default inside color for blow up windows for new users
+attrib
+ Default Box Border
+This is the default Border color for new users
+attrib
+ Automatic UL Factor
+Files are given this many points for each 50k (0 means dont autovalidate)
+int 0-500
+ Use Auto-Compensation
+When a file is downloaded the uploader gets the files worth of points back
+boo
+ File Name for Zips
+This file will be included in .ZIP's when commenting. Leave blank for none.
+lstr
+ Use EMS
+If yes, then the overlays will be put into EMS
+boo
+ Hangup on new users
+If yes, then the BBS will hang up on new users if you use a matrix
+boo
+ Netmail Origin Line #1
+The first string printed in netmail bases.
+Mstr
+ Netmail Origin Line #2
+The Second string printed in the netmail bases.
+Mstr
+ Is this BBS a "HUB"
+If yes, then this BBS will act as a "Hub" for netmail.
+Boo
+ Maximize Dos Shell
+If yes then a "Maximum" Dos shell will be used. W/Out EMS this MAY be slow.
+Boo
+ Lock out Baud Pass
+The password used to logon the BBS at an 'illegal' baud rate [N=None]
+Mstr
+ Use Printer Log
+If yes then the BBS will dump all logs to the printer (as well as disk)
+Boo
+ Save Screen
+If Yes then the BBS will use the "Screen Saver" after 5 minutes in WFC.
+Boo
+ Number of Conferences
+The number of conferences your BBS has (via the [J] Command) 1-5. Usually 1
+Int 1-5
+ Conference 1 Name
+The "Name" for conference 1
+Mstr
+ Conference 2 Name
+The "Name" for conference 2
+Mstr
+ Conference 3 Name
+The "Name" for conference 3
+Mstr
+ Conference 4 Name
+The "Name" for conference 4
+Mstr
+ Conference 5 Name
+The "Name" for conference 5
+Mstr
+ Net Type 1
+Allows you to pick up any L.S.D. Upgrades via the netmail
+Boo
+ Net Type 2
+Allows you to pick up Email via NetMail
+Boo
+ Net Type 3
+Allows you to pick up bulletins via NetMail
+Boo
+ Path to Upgrade.Zip
+The path Where L.S.D. Updates will be sent - MUST BE DIFFERENT then any dir
+mstr
+ Show Newscan Prompts
+If yes then LSD will ask the user to newscan file areas/message areas
+Boo
+ Use BBS in Multi-Node
+If yes, then the BBS will act like a Multi-Node system.
+Boo
+ Node Number
+The Node Number you are for multi-line BBS's.
+Int 1-32767
+ Dos Shell Password
+The Password needed to remotely shell to dos.
+Mstr
+ System 1 Pw Prompt
+The prompt when a user chooses system 1 from the matrix
+mstr
+ System 2 Pw Prompt
+The Prompt when a user chooses System 2 from the matrix
+mstr
+ System 3 Pw Prompt
+The Prompt when a user chooses system 3 from the matrix
+mstr
+ Matrix Name Prompt
+The prompt where it asks for the user name when logging on the BBS.
+mstr
+ Matrix Hangup Prompt
+The prompt displayed when a user hangs up from the matrix
+mstr
+ Invalid Command Prompt
+The prompt displayed when a user picks an invalid option from the prompt
+mstr
+ Min. G-File UD Ratio
+The Minimum U/D ratio for G-Files
+Int
+ Min. G-File PCR
+The Minimum Post/Call Ratio for G-Files
+Int
