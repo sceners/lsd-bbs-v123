@@ -1,0 +1,70 @@
+program majic;
+
+uses dos,crt,gentypes,gensubs;
+
+var u:userrec;
+    f:file of userrec;
+    udrat,udkrat,pcrat,i:integer;
+    s:string;
+begin
+clrscr;
+textcolor(15);
+writeln('Majic Wonders by The L.S.D. Team');
+textcolor(7);
+writeln;
+writeln('This program will go through your user log and set each users');
+writeln('Upload/Download Ratios, PCR Ratios, and U/D K ratios to what you');
+writeln('Want, but FIRST, we need to ask a few questions... So lets begin:');
+writeln;
+write('What Upload/Download Ratio do you want:');
+readln(s);
+if s='' then s:='0';
+udrat:=valu(s);
+write('What Upload/Download K Ratio do you want:');
+readln(s);
+if s='' then s:='0';
+udkrat:=valu(s);
+write('What PCR Do you want:');
+readln(s);
+if s='' then s:='0';
+pcrat:=valu(s);
+clrscr;
+writeln('Ok, this is what we have:');
+textcolor(15);
+writeln;
+write('Upload/Download Ratio        :');
+textcolor(14);writeln(udrat);
+textcolor(15);
+write('Upload/Download K Ratio      :');
+textcolor(14);writeln(udkrat);
+textcolor(15);
+write('Post/Call Ratio              :');
+textcolor(14);
+writeln(pcrat);
+writeln;
+textcolor(7);
+write('Press [Return]: to continue:');
+readln;
+clrscr;
+writeln('Processing....');
+assign(f,'USERS');
+i:=0;
+reset(f);
+while not eof(f) do begin
+  seek(f,i);
+  read(f,u);
+  u.udratio:=udrat;
+  u.udkratio:=udkrat;
+  u.pcratio:=pcrat;
+  textcolor(11);
+  writeln(u.handle);
+  seek(f,i);
+  write(f,u);
+  inc(i);
+  end;
+close(f);
+textcolor(15);
+writeln;
+writeln(i,' users converted!');
+end.
+
